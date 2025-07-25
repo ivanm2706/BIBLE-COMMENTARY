@@ -1,9 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit';
-import bibleReducer from './features/bible/bibleSlice';
+import commentsReducer from './features/comments/commentsSlice';
+import modeReducer from './features/mode/modeSlice';
 
 export const store = configureStore({
   reducer: {
-    bible: bibleReducer,
+    comments: commentsReducer,
+    mode: modeReducer,
   },
 });
 

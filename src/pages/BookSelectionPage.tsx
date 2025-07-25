@@ -1,24 +1,29 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {
   Container,
   Row,
   Col,
-  Button,
-  ToggleButtonGroup,
-  ToggleButton
+  Button
 } from 'react-bootstrap';
-import { newTestamentNames, oldTestamentNames } from '../data/books/books';
 import { useNavigate } from 'react-router-dom';
 import AnimatedPage from '../components/AnimatedPage';
+import LangModeButton from '../components/LangModeButton';
+import { useAppSelector } from '../hooks/hooks';
+import { data as commentary } from '../data/bibleComments/data';
+import { Comment } from '../types/comment';
+
+export const getOldTestament = (commentaries: Comment[]): Comment[] => {
+  return commentaries.filter(e => !e.isNewTestament);
+}
+
+export const getNewTestament = (commentaries: Comment[]): Comment[] => {
+  return commentaries.filter(e => e.isNewTestament);
+}
 
 
 const BookSelectionPage: React.FC = () => {
-  const [lang, setLang] = useState<'ru' | 'en'>('ru');
+  const lang = useAppSelector(state => state.mode.lang);
   const navigate = useNavigate();
-
-  const toggleLang = (val: 'ru' | 'en') => {
-    setLang(val);
-  };
 
   const handleBookClick = (bookId: string) => {
     navigate(`/book/${bookId}`)
@@ -26,28 +31,19 @@ const BookSelectionPage: React.FC = () => {
 
   return (
     <AnimatedPage>
-      <Container className="py-4">
-        <div className="d-flex justify-content-end mb-3">
-          <ToggleButtonGroup type="radio" name="lang" value={lang} onChange={toggleLang}>
-            <ToggleButton id="lang-ru" variant="outline-primary" value="ru" size="sm">
-              ru
-            </ToggleButton>
-            <ToggleButton id="lang-en" variant="outline-primary" value="en" size="sm">
-              en
-            </ToggleButton>
-          </ToggleButtonGroup>
-        </div>
+      <Container className="py-5 position-relative">
+        <LangModeButton />
 
         <h5 className="mb-2">{lang === 'ru' ? 'Ветхий Завет' : 'Old Testament'}</h5>
         <Row xs={3} sm={4} md={6} lg={8} className="g-2 mb-4">
-          {Object.entries(oldTestamentNames).map(([id, book]) => (
-            <Col key={id}>
+          {getOldTestament(commentary).map(comment => (
+            <Col key={comment.id}>
               <Button
                 variant="outline-secondary"
                 className="w-100"
-                onClick={() => handleBookClick(id)}
+                onClick={() => handleBookClick(comment.id)}
               >
-                {book[lang]}
+                {comment.shortTitle[lang]}
               </Button>
             </Col>
           ))}
@@ -55,14 +51,14 @@ const BookSelectionPage: React.FC = () => {
 
         <h5 className="mb-2">{lang === 'ru' ? 'Новый Завет' : 'New Testament'}</h5>
         <Row xs={3} sm={4} md={6} lg={8} className="g-2">
-          {Object.entries(newTestamentNames).map(([id, book]) => (
-            <Col key={id}>
+          {getNewTestament(commentary).map(comment => (
+            <Col key={comment.id}>
               <Button
                 variant="outline-secondary"
                 className="w-100"
-                onClick={() => handleBookClick(id)}
+                onClick={() => handleBookClick(comment.id)}
               >
-                {book[lang]}
+                {comment.shortTitle[lang]}
               </Button>
             </Col>
           ))}
