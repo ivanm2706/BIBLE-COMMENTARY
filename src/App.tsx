@@ -1,25 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import StartPage from './pages/StartPage';
+import BookSelectionPage from './pages/BookSelectionPage';
+import { Route, Routes, useLocation } from 'react-router-dom';
+import BookOverviewPage from './pages/BookOverviewPage';
+import { AnimatePresence } from 'framer-motion';
 
 function App() {
+  const location = useLocation();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AnimatePresence mode="wait">
+      <Routes location={location} key={location.pathname}>
+        <Route path="/" element={<StartPage />} />
+        <Route path='/book' element={<BookSelectionPage />} />
+        <Route path='/book/:bookId' element={<BookOverviewPage />} />
+      </Routes>
+    </AnimatePresence>
   );
 }
 

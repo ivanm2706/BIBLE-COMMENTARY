@@ -1,0 +1,447 @@
+{
+  "id": "matthew",
+  "name": {
+    "ru": "Матфей",
+    "en": "Matthew"
+  },
+  "structure": [
+    {
+      "id": "prologue",
+      "title": {
+        "ru": "Пролог",
+        "en": "Prologue"
+      },
+      "chapters": [
+        1,
+        2
+      ]
+    }
+  ],
+  "chapterContent": {
+    "1": {
+      "translations": {
+        "ru": "Родословие Иисуса Христа, Сына Давидова, Сына Авраамова.",
+        "en": "This is the genealogy of Jesus the Messiah the son of David, the son of Abraham:"
+      },
+      "commentary": {
+        "upContext": {
+          "ru": "",
+          "en": ""
+        },
+        "downContext": {
+          "ru": "",
+          "en": ""
+        },
+        "block": "prologue"
+      }
+    },
+    "2": {
+      "translations": {
+        "ru": "Авраам родил Исаака; Исаак родил Иакова; Иаков родил Иуду и братьев его;",
+        "en": "Abraham was the father of Isaac, Isaac the father of Jacob, Jacob the father of Judah and his brothers,"
+      },
+      "commentary": {
+        "upContext": {
+          "ru": "",
+          "en": ""
+        },
+        "downContext": {
+          "ru": "",
+          "en": ""
+        },
+        "block": ""
+      }
+    },
+    "3": {
+      "translations": {
+        "ru": "Иуда родил Фареса и Зару от Фамари; Фарес родил Есрома; Есром родил Арама;",
+        "en": "Judah the father of Perez and Zerah, whose mother was Tamar, Perez the father of Hezron,"
+      },
+      "commentary": {
+        "upContext": {
+          "ru": "",
+          "en": ""
+        },
+        "downContext": {
+          "ru": "",
+          "en": ""
+        },
+        "block": ""
+      }
+    },
+    "4": {
+      "translations": {
+        "ru": "Арам родил Аминадава; Аминадав родил Наассона; Наассон родил Салмона;",
+        "en": ""
+      },
+      "commentary": {
+        "upContext": {
+          "ru": "",
+          "en": ""
+        },
+        "downContext": {
+          "ru": "",
+          "en": ""
+        },
+        "block": ""
+      }
+    },
+    "5": {
+      "translations": {
+        "ru": "Салмон родил Вооза от Рахавы; Вооз родил Овида от Руфи; Овид родил Иессея;",
+        "en": "Salmon the father of Boaz, whose mother was Rahab, Boaz the father of Obed, whose mother was Ruth, Obed the father of Jesse,"
+      },
+      "commentary": {
+        "upContext": {
+          "ru": "",
+          "en": ""
+        },
+        "downContext": {
+          "ru": "",
+          "en": ""
+        },
+        "block": ""
+      }
+    },
+    "6": {
+      "translations": {
+        "ru": "Иессей родил Давида царя; Давид царь родил Соломона от бывшей за Уриею;",
+        "en": "and Jesse the father of King David. David was the father of Solomon, whose mother had been Uriah’s wife,"
+      },
+      "commentary": {
+        "upContext": {
+          "ru": "",
+          "en": ""
+        },
+        "downContext": {
+          "ru": "",
+          "en": ""
+        },
+        "block": ""
+      }
+    },
+    "7": {
+      "translations": {
+        "ru": "Соломон родил Ровоама; Ровоам родил Авию; Авия родил Асу;",
+        "en": "Solomon the father of Rehoboam, Rehoboam the father of Abijah, Abijah the father of Asa,"
+      },
+      "commentary": {
+        "upContext": {
+          "ru": "",
+          "en": ""
+        },
+        "downContext": {
+          "ru": "",
+          "en": ""
+        },
+        "block": ""
+      }
+    },
+    "8": {
+      "translations": {
+        "ru": "Аса родил Иосафата; Иосафат родил Иорама; Иорам родил Озию;",
+        "en": "Asa the father of Jehoshaphat, Jehoshaphat the father of Jehoram, Jehoram the father of Uzziah,"
+      },
+      "commentary": {
+        "upContext": {
+          "ru": "",
+          "en": ""
+        },
+        "downContext": {
+          "ru": "",
+          "en": ""
+        },
+        "block": ""
+      }
+    },
+    "9": {
+      "translations": {
+        "ru": "Озия родил Иоафама; Иоафам родил Ахаза; Ахаз родил Езекию;",
+        "en": "Uzziah the father of Jotham, Jotham the father of Ahaz, Ahaz the father of Hezekiah,"
+      },
+      "commentary": {
+        "upContext": {
+          "ru": "",
+          "en": ""
+        },
+        "downContext": {
+          "ru": "",
+          "en": ""
+        },
+        "block": ""
+      }
+    },
+    "10": {
+      "translations": {
+        "ru": "Езекия родил Манассию; Манассия родил Амона; Амон родил Иосию;",
+        "en": "Hezekiah the father of Manasseh, Manasseh the father of Amon, Amon the father of Josiah,"
+      },
+      "commentary": {
+        "upContext": {
+          "ru": "",
+          "en": ""
+        },
+        "downContext": {
+          "ru": "",
+          "en": ""
+        },
+        "block": ""
+      }
+    },
+    "11": {
+      "translations": {
+        "ru": "Иосия родил Иоакима; Иоаким родил Иехонию и братьев его, перед переселением в Вавилон.",
+        "en": "and Josiah the father of Jeconiah and his brothers at the time of the exile to Babylon."
+      },
+      "commentary": {
+        "upContext": {
+          "ru": "",
+          "en": ""
+        },
+        "downContext": {
+          "ru": "",
+          "en": ""
+        },
+        "block": ""
+      }
+    },
+    "12": {
+      "translations": {
+        "ru": "По переселении же в Вавилон, Иехония родил Салафииля; Салафииль родил Зоровавеля;",
+        "en": "After the exile to Babylon: Jeconiah was the father of Shealtiel, Shealtiel the father of Zerubbabel,"
+      },
+      "commentary": {
+        "upContext": {
+          "ru": "",
+          "en": ""
+        },
+        "downContext": {
+          "ru": "",
+          "en": ""
+        },
+        "block": ""
+      }
+    },
+    "13": {
+      "translations": {
+        "ru": "Зоровавель родил Авиуда; Авиуд родил Елиакима; Елиаким родил Азора;",
+        "en": "Zerubbabel the father of Abihud, Abihud the father of Eliakim, Eliakim the father of Azor,"
+      },
+      "commentary": {
+        "upContext": {
+          "ru": "",
+          "en": ""
+        },
+        "downContext": {
+          "ru": "",
+          "en": ""
+        },
+        "block": ""
+      }
+    },
+    "14": {
+      "translations": {
+        "ru": "Азор родил Садока; Садок родил Ахима; Ахим родил Елиуда;",
+        "en": "Azor the father of Zadok, Zadok the father of Akim, Akim the father of Elihud,"
+      },
+      "commentary": {
+        "upContext": {
+          "ru": "",
+          "en": ""
+        },
+        "downContext": {
+          "ru": "",
+          "en": ""
+        },
+        "block": ""
+      }
+    },
+    "15": {
+      "translations": {
+        "ru": "Елиуд родил Елеазара; Елеазар родил Матфана; Матфан родил Иакова;",
+        "en": "Elihud the father of Eleazar, Eleazar the father of Matthan, Matthan the father of Jacob,"
+      },
+      "commentary": {
+        "upContext": {
+          "ru": "",
+          "en": ""
+        },
+        "downContext": {
+          "ru": "",
+          "en": ""
+        },
+        "block": ""
+      }
+    },
+    "16": {
+      "translations": {
+        "ru": "Иаков родил Иосифа, мужа Марии, от Которой родился Иисус, называемый Христос.",
+        "en": "and Jacob the father of Joseph, the husband of Mary, and Mary was the mother of Jesus who is called the Messiah."
+      },
+      "commentary": {
+        "upContext": {
+          "ru": "",
+          "en": ""
+        },
+        "downContext": {
+          "ru": "",
+          "en": ""
+        },
+        "block": ""
+      }
+    },
+    "17": {
+      "translations": {
+        "ru": "Итак, всех родов от Авраама до Давида четырнадцать родов; и от Давида до переселения в Вавилон четырнадцать родов; и от переселения в Вавилон до Христа четырнадцать родов.",
+        "en": "Thus there were fourteen generations in all from Abraham to David, fourteen from David to the exile to Babylon, and fourteen from the exile to the Messiah."
+      },
+      "commentary": {
+        "upContext": {
+          "ru": "",
+          "en": ""
+        },
+        "downContext": {
+          "ru": "",
+          "en": ""
+        },
+        "block": ""
+      }
+    },
+    "18": {
+      "translations": {
+        "ru": "Рождество Иисуса Христа было так: по обручении Матери Его Марии с Иосифом, прежде нежели сочетались они, оказалось, что Она имеет во чреве от Духа Святого.",
+        "en": "This is how the birth of Jesus the Messiah came about: His mother Mary was pledged to be married to Joseph, but before they came together, she was found to be pregnant through the Holy Spirit."
+      },
+      "commentary": {
+        "upContext": {
+          "ru": "",
+          "en": ""
+        },
+        "downContext": {
+          "ru": "",
+          "en": ""
+        },
+        "block": ""
+      }
+    },
+    "19": {
+      "translations": {
+        "ru": "Иосиф же, муж Её, будучи праведен и не желая огласить Её, хотел тайно отпустить Её.",
+        "en": "Because Joseph her husband was faithful to the law, and yet did not want to expose her to public disgrace, he had in mind to divorce her quietly."
+      },
+      "commentary": {
+        "upContext": {
+          "ru": "",
+          "en": ""
+        },
+        "downContext": {
+          "ru": "",
+          "en": ""
+        },
+        "block": ""
+      }
+    },
+    "20": {
+      "translations": {
+        "ru": "Но когда он помыслил это, — се, Ангел Господень явился ему во сне и сказал: Иосиф, сын Давидов! не бойся принять Марию, жену твою, ибо родившееся в Ней есть от Духа Святого;",
+        "en": "But after he had considered this, an angel of the Lord appeared to him in a dream and said, “Joseph son of David, do not be afraid to take Mary home as your wife, because what is conceived in her is from the Holy Spirit."
+      },
+      "commentary": {
+        "upContext": {
+          "ru": "",
+          "en": ""
+        },
+        "downContext": {
+          "ru": "",
+          "en": ""
+        },
+        "block": ""
+      }
+    },
+    "21": {
+      "translations": {
+        "ru": "Родит же Сына, и наречёшь Ему имя Иисус, ибо Он спасёт людей Своих от грехов их.",
+        "en": "She will give birth to a son, and you are to give him the name Jesus, because he will save his people from their sins.”"
+      },
+      "commentary": {
+        "upContext": {
+          "ru": "",
+          "en": ""
+        },
+        "downContext": {
+          "ru": "",
+          "en": ""
+        },
+        "block": ""
+      }
+    },
+    "22": {
+      "translations": {
+        "ru": "А всё сие произошло, да сбудется речённое Господом через пророка, который говорит:",
+        "en": "All this took place to fulfill what the Lord had said through the prophet:"
+      },
+      "commentary": {
+        "upContext": {
+          "ru": "",
+          "en": ""
+        },
+        "downContext": {
+          "ru": "",
+          "en": ""
+        },
+        "block": ""
+      }
+    },
+    "23": {
+      "translations": {
+        "ru": "«се, Дева во чреве приимет и родит Сына, и нарекут имя Ему Еммануил, что значит: с нами Бог».",
+        "en": "“The virgin will conceive and give birth to a son, and they will call him Immanuel” (which means “God with us”)."
+      },
+      "commentary": {
+        "upContext": {
+          "ru": "",
+          "en": ""
+        },
+        "downContext": {
+          "ru": "",
+          "en": ""
+        },
+        "block": ""
+      }
+    },
+    "24": {
+      "translations": {
+        "ru": "Встав от сна, Иосиф поступил, как повелел ему Ангел Господень, и принял жену свою,",
+        "en": "When Joseph woke up, he did what the angel of the Lord had commanded him and took Mary home as his wife."
+      },
+      "commentary": {
+        "upContext": {
+          "ru": "",
+          "en": ""
+        },
+        "downContext": {
+          "ru": "",
+          "en": ""
+        },
+        "block": ""
+      }
+    },
+    "25": {
+      "translations": {
+        "ru": "и не знал Её, как наконец Она родила Сына Своего первенца, и он нарёк Ему имя: Иисус.",
+        "en": "But he did not consummate their marriage until she gave birth to a son. And he gave him the name Jesus."
+      },
+      "commentary": {
+        "upContext": {
+          "ru": "",
+          "en": ""
+        },
+        "downContext": {
+          "ru": "",
+          "en": ""
+        },
+        "block": ""
+      }
+    }
+  }
+}
