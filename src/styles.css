@@ -1,0 +1,9 @@
+.chapter-nav-wrapper {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.chapter-nav-inner {
+  display: flex;
+  flex-wrap: nowrap;
+}

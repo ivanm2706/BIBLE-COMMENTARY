@@ -4,7 +4,8 @@ import BookCommentPage from "../pages/BookCommentPage";
 // Обёртка, чтобы вытащить bookId из URL
 export default function BookCommentWrapper() {
   const { bookId } = useParams();
-  const lang = 'ru'; // либо из useAppSelector
+  console.log(bookId)
+  
 
-  return <BookCommentPage bookId={bookId || ''} lang={lang} />;
+  return <BookCommentPage bookId={bookId || ''} />;
 };
