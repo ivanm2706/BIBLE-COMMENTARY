@@ -16,7 +16,10 @@ const StartPage: React.FC = () => {
   return (
     <AnimatedPage>
       <Container className="position-relative d-flex flex-column align-items-center justify-content-center vh-100 text-center">
-        <LangModeButton />
+        <div className='position-absolute top-0 end-0 p-3'>
+          <LangModeButton />
+        </div>
+        
 
         <h1 className="mb-4">
           {lang === 'ru' ? 'Библейский комментарий' : 'Bible Commentary'}
@@ -25,6 +28,7 @@ const StartPage: React.FC = () => {
         <Button size="lg" onClick={handleStart}>
           {lang === 'ru' ? 'начать' : 'start'}
         </Button>
+
       </Container>
     </AnimatedPage>
   );

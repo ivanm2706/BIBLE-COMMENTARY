@@ -1,38 +1,32 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
 import { data } from '../data/bibleComments/data';
-import LangModeButton from '../components/LangModeButton';
 import { useAppSelector } from '../hooks/hooks';
 import OutlineAccordion from '../components/OutlineAccordion';
 import OverviewAccordion from '../components/OverviewAccordion';
 import ContentAccordion from '../components/ContentAccordion';
-import { ChapterVerseNav } from '../components/ChapterVerseNav';
+import { useParams, useSearchParams } from 'react-router-dom';
+import BookNav from '../components/BookNav';
+import CommentDisplay from '../components/CommentDisplay';
 
 
-type Props = {
-  bookId: string;
-};
+const BookCommentPage: React.FC = () => {
+  const { bookId = '' } = useParams();
+  const [searchParams] = useSearchParams();
+  const chapter: number = Number(searchParams.get('chapter')) || 1;
+  const verse: number = Number(searchParams.get('verse')) || 1;
+  console.log(chapter, verse);
 
-const BookCommentPage: React.FC<Props> = ({ bookId }) => {
   const lang = useAppSelector(state => state.mode.lang);
   const comment = data.find(c => c.id === bookId);
   const content = comment?.[lang];
-  
   const sections = content?.sections;
 
   if (!sections || !content) return <div>{lang === 'ru' ? 'Книга не найдена' : 'Book not found'}</div>;
 
   return (
     <Container className="">
-      <ChapterVerseNav 
-        bookId={bookId}
-        chapterId="1"
-        verses={Object.keys(content.chapters["1"].verseCommentary)}
-        selectedVerseId="1"     
-      />
-      <Container className="mb-5 width-1 position-relative" style={{height: "1px"}}>
-        <LangModeButton />
-      </Container>
+      <BookNav />
 
       <h2>{content.title}</h2>
       <p className="text-center fw-bold">{content.subtitle}</p>
@@ -46,6 +40,8 @@ const BookCommentPage: React.FC<Props> = ({ bookId }) => {
       <ContentAccordion lang={lang} sections={sections} />    
 
       <OutlineAccordion outline={sections.outline}/>
+
+      <CommentDisplay />
     </Container>
   );
 };

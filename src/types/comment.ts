@@ -72,6 +72,11 @@ export type Comment = {
     ru: string;
     en: string;
   };
+  title: {
+    ru: string;
+    en: string;
+  }
+  chapters: number;
   isNewTestament: boolean;
   ru: CommentContent;
   en?: CommentContent;

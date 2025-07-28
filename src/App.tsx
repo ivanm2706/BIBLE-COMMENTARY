@@ -3,7 +3,7 @@ import StartPage from './pages/StartPage';
 import BookSelectionPage from './pages/BookSelectionPage';
 import { Route, Routes, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
-import BookCommentWrapper from './components/BookCommentWrapper';
+import BookCommentPage from './pages/BookCommentPage';
 
 function App() {
   const location = useLocation();
@@ -12,7 +12,7 @@ function App() {
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<StartPage />} />
         <Route path='/book' element={<BookSelectionPage />} />
-        <Route path='/book/:bookId' element={<BookCommentWrapper />} />
+        <Route path='/book/:bookId' element={<BookCommentPage />} />
       </Routes>
     </AnimatePresence>
   );

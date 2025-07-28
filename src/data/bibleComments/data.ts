@@ -9,6 +9,11 @@ export const data: Comment[] = [
       ru: 'Мф',
       en: 'Mat'
     },
+    title: {
+      ru: 'Матфея',
+      en: 'Matthew'
+    },
+    chapters: 28,
     isNewTestament: true,
     ru: MatDataRu,
     en: MatDataEn,
