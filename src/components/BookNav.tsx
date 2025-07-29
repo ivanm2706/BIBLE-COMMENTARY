@@ -6,8 +6,11 @@ import { Link } from 'react-router-dom';
 
 function BookNav() {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
-      <Container>
+    <Navbar expand="lg" fixed="top" style={{ paddingBlock: "0px", backgroundColor: '#e4e0ff' }} >
+      <Container
+        className='bg-body-tertiary shadow-sm border-bottom'
+        style={{ maxWidth: "1296px", paddingBlock: '8px' }}
+      >
         <Navbar.Brand as={Link} to="/">BilbeCommentary</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

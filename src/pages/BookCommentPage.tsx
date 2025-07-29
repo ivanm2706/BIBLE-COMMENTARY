@@ -5,17 +5,13 @@ import { useAppSelector } from '../hooks/hooks';
 import OutlineAccordion from '../components/OutlineAccordion';
 import OverviewAccordion from '../components/OverviewAccordion';
 import ContentAccordion from '../components/ContentAccordion';
-import { useParams, useSearchParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import BookNav from '../components/BookNav';
 import CommentDisplay from '../components/CommentDisplay';
-
+import { ParsedComment } from '../components/ParsedComment';
 
 const BookCommentPage: React.FC = () => {
   const { bookId = '' } = useParams();
-  const [searchParams] = useSearchParams();
-  const chapter: number = Number(searchParams.get('chapter')) || 1;
-  const verse: number = Number(searchParams.get('verse')) || 1;
-  console.log(chapter, verse);
 
   const lang = useAppSelector(state => state.mode.lang);
   const comment = data.find(c => c.id === bookId);
@@ -25,14 +21,19 @@ const BookCommentPage: React.FC = () => {
   if (!sections || !content) return <div>{lang === 'ru' ? 'Книга не найдена' : 'Book not found'}</div>;
 
   return (
-    <Container className="">
+    <Container className="position-relative">
       <BookNav />
 
-      <h2>{content.title}</h2>
+      <div style={{ paddingTop: "80px" }}>
+        <h2>{content.title}</h2>
+      </div>
+      
       <p className="text-center fw-bold">{content.subtitle}</p>
 
       {content.keyVerses.map(vers => (
-        <p className="text-end fst-italic" key={vers} >{vers}</p>
+        <p className="text-end fst-italic" key={vers} >
+          <ParsedComment text={vers}/>
+        </p>
       ))}
 
       <OverviewAccordion lang={lang} sections={sections} /> 

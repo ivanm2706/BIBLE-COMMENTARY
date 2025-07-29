@@ -1,3 +1,8 @@
+body {
+  background-color: #e4e0ff;
+}
+
+
 .chapter-nav-wrapper {
   overflow-x: auto;
   white-space: nowrap;

@@ -1,12 +1,15 @@
 import React, { useState } from 'react';
 import { Accordion } from 'react-bootstrap';
 import { Outline, OutlineItem } from '../types/comment';
+import { ParsedComment } from './ParsedComment';
+import { useAppSelector } from '../hooks/hooks';
 
 type Props = {
   outline: Outline;
 };
 
 const RenderItem: React.FC<{ item: OutlineItem; level: number }> = ({ item, level }) => {
+  const lang = useAppSelector(state => state.mode.lang);
   const [open, setOpen] = useState(false);
   const hasChildren = !!item.items;
 
@@ -19,7 +22,7 @@ const RenderItem: React.FC<{ item: OutlineItem; level: number }> = ({ item, leve
         {hasChildren && (
           <strong>{open ? '▼ ' : '▶ '}</strong>
         )}
-        {item.label}
+        <ParsedComment text={item.label} />
       </div>
       {hasChildren && open && (
         <ul className={`ms-2 mt-1`}>

@@ -1,6 +1,7 @@
 import { Accordion, Card } from "react-bootstrap";
 import { getNameAccordingLanguage } from "../utils/getNameAccordingLanguage";
 import { CommentSection } from "../types/comment";
+import { ParsedComment } from "./ParsedComment";
 
 type Props = {
   lang: 'ru' | 'en';
@@ -18,7 +19,9 @@ export default function ContentAccordion({ lang, sections }: Props) {
         <Accordion.Body>
           {sections.content.paragraphs.map(p => (
             <ul key={p}>
-              <li>{p}</li>
+              <li>
+                <ParsedComment text={p} />
+              </li>
             </ul>
           ))}
         </Accordion.Body>
