@@ -1,21 +1,8 @@
 import { Comment } from "../../types/comment";
-import { MatDataEn } from "../Mat/en/dataMatEn";
-import { MatDataRu } from "../Mat/ru/dataMatRu";
+import { data1th } from "../1th/data1th";
+import { dataMat } from "../Mat/dataMat";
 
 export const data: Comment[] = [
-  {
-    id: 'mat',
-    shortTitle: {
-      ru: 'Мф',
-      en: 'Mat'
-    },
-    title: {
-      ru: 'Матфея',
-      en: 'Matthew'
-    },
-    chapters: 28,
-    isNewTestament: true,
-    ru: MatDataRu,
-    en: MatDataEn,
-  },
+  dataMat,
+  data1th
 ]
